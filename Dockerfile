@@ -1,5 +1,12 @@
 FROM debian:11
 
+LABEL mantainer="Michele Forese"
+LABEL email="michele.forese.personal@gmail.com"
+LABEL name="clang-tidy"
+LABEL version="0.1"
+
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update \
   && apt-get install \
   -y \
